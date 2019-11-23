@@ -1,0 +1,3 @@
+C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir
+C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/rebuild_cache.dir
