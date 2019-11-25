@@ -15,6 +15,9 @@ public:
     int tile_pos_r, tile_pos_c;
     int center_x, center_y;
 
+    Player();
+    Player(int, int);
+
     void move_right();
     void move_left();
     void move_up();

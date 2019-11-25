@@ -84,6 +84,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Libraries">
+			<Option target="ProteusPokemon"/>
+		</Unit>
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Player/Item.cpp">
 			<Option target="ProteusPokemon"/>
 		</Unit>

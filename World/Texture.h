@@ -7,6 +7,7 @@
 
 enum TILETYPE {
     TALLGRASS,
+    PATH,
     NORMAL,
 };
 

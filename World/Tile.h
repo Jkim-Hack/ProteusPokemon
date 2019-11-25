@@ -11,6 +11,7 @@
 
 class Tile {
 public:
+    Tile();
     Tile(int, int, Texture);
     Tile(int, int, int, int, Texture);
     int sizeX, sizeY;
@@ -21,6 +22,8 @@ public:
     void set_texture(Texture);
 private:
     Texture texture;
+    void draw_two_path_rect(int, int);
+    void draw_tall_grass_quarter(int,int);
 
 };
 

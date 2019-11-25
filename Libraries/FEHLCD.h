@@ -1,6 +1,7 @@
 #ifndef FEHLCD_H
 #define FEHLCD_H
 
+#include <cstdint>
 #include "spi.h"
 #include "derivative.h"
 #include "LCDColors.h"
