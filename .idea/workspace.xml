@@ -13,14 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="39d9f1f4-7cdb-4dc9-86b3-8730cde318a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Libraries/FEHLCD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Libraries/FEHLCD.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Texture.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/World/Tile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/World/Tile.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProteusPokemon.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProteusPokemon.cbp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,8 +91,17 @@
       <updated>1574463866974</updated>
       <workItem from="1574463869937" duration="7518000" />
       <workItem from="1574559479984" duration="2150000" />
-      <workItem from="1574622238914" duration="11031000" />
+      <workItem from="1574622238914" duration="11061000" />
+      <workItem from="1574697125284" duration="5171000" />
     </task>
+    <task id="LOCAL-00001" summary="initial path tile created">
+      <created>1574660001058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574660001058</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,5 +119,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial path tile created" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial path tile created" />
   </component>
 </project>

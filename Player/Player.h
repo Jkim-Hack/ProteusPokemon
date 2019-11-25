@@ -7,13 +7,14 @@
 
 #include <vector>
 #include "Item.h"
+#include "../World/Texture.h"
 
 class Player {
 
 public:
-
     int tile_pos_r, tile_pos_c;
     int center_x, center_y;
+    Texture playerTexture;
 
     Player();
     Player(int, int);
@@ -23,7 +24,6 @@ public:
     void move_up();
     void move_down();
     void draw_player();
-
 private:
     std::vector<Item> bag;
 };

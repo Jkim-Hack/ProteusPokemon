@@ -20,6 +20,8 @@ public:
 
     void draw_tile();
     void set_texture(Texture);
+    void onPlayerEnter(Player*);
+    void onPlayerExit();
 private:
     Texture texture;
     void draw_two_path_rect(int, int);

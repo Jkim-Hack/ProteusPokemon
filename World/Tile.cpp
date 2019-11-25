@@ -63,6 +63,20 @@ void Tile::draw_tile() {
     }
 }
 
+void Tile::set_texture(Texture texture) {
+    this->texture = texture;
+    draw_tile();
+}
+
+void Tile::onPlayerEnter(Player *player) {
+    this->player = player;
+    set_texture(player->playerTexture);
+}
+
+void Tile::onPlayerExit() {
+    this->player = nullptr;
+}
+
 void Tile::draw_two_path_rect(int originX, int originY) {
     LCD.SetFontColor(0xA8A8A8);
     LCD.DrawPixel(originX, originY);
@@ -72,5 +86,49 @@ void Tile::draw_two_path_rect(int originX, int originY) {
 }
 
 void Tile::draw_tall_grass_quarter(int originX, int originY) {
+    LCD.SetFontColor(0xA8A8A8);
+    LCD.DrawPixel(originX, originY+2);
+    LCD.DrawPixel(originX, originY+3);
+    LCD.DrawPixel(originX, originY+4);
+    LCD.DrawPixel(originX+1, originY+5);
+    LCD.DrawPixel(originX+2, originY+6);
+    LCD.DrawPixel(originX+3, originY+7);
+    LCD.DrawPixel(originX+4, originY+7);
+    LCD.DrawPixel(originX+4, originY+6);
+    LCD.DrawPixel(originX+5, originY+6);
+    LCD.DrawPixel(originX+4, originY+5);
+    LCD.DrawPixel(originX+5, originY+5);
+    LCD.DrawPixel(originX+5, originY+4);
+    LCD.DrawPixel(originX+4, originY+4);
+    LCD.DrawPixel(originX+3, originY+4);
+    LCD.DrawPixel(originX+2, originY+3);
+    LCD.DrawPixel(originX+1, originY+2);
+    LCD.DrawPixel(originX+4, originY+3);
+    LCD.DrawPixel(originX+4, originY+2);
+    LCD.DrawPixel(originX+5, originY+1);
+    LCD.DrawPixel(originX+6, originY);
+    LCD.DrawPixel(originX+7, originY+1);
+    LCD.DrawPixel(originX+7, originY+2);
+    LCD.DrawPixel(originX+6, originY+3);
+    LCD.DrawPixel(originX+6, originY+4);
+
+    LCD.SetFontColor(0xD0D0D0);
+    LCD.DrawPixel(originX, originY+6);
+    LCD.DrawPixel(originX+1, originY+6);
+    LCD.DrawPixel(originX+1, originY+7);
+    LCD.DrawPixel(originX+2, originY+7);
+    LCD.DrawPixel(originX+2, originY+4);
+    LCD.DrawPixel(originX+3, originY+5);
+    LCD.DrawPixel(originX+3, originY+6);
+    LCD.DrawPixel(originX+5, originY+7);
+    LCD.DrawPixel(originX+6, originY+5);
+    LCD.DrawPixel(originX+5, originY+3);
+    LCD.DrawPixel(originX+5, originY+2);
+    LCD.DrawPixel(originX+6, originY+2);
+    LCD.DrawPixel(originX+7, originY);
+    LCD.DrawPixel(originX+7, originY+3);
 
 }
+
+
+
