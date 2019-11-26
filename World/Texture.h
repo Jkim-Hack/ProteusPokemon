@@ -9,6 +9,7 @@ enum TILETYPE {
     TALLGRASS,
     PATH,
     NORMAL,
+    PLAYER,
 };
 
 struct Texture {

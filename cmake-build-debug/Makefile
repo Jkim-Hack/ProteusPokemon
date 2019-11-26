@@ -232,6 +232,33 @@ World\Tile.cpp.s:
 	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\World\Tile.cpp.s
 .PHONY : World\Tile.cpp.s
 
+World\TileSet.obj: World\TileSet.cpp.obj
+
+.PHONY : World\TileSet.obj
+
+# target to build an object file
+World\TileSet.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.obj
+.PHONY : World\TileSet.cpp.obj
+
+World\TileSet.i: World\TileSet.cpp.i
+
+.PHONY : World\TileSet.i
+
+# target to preprocess a source file
+World\TileSet.cpp.i:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.i
+.PHONY : World\TileSet.cpp.i
+
+World\TileSet.s: World\TileSet.cpp.s
+
+.PHONY : World\TileSet.s
+
+# target to generate assembly for a file
+World\TileSet.cpp.s:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.s
+.PHONY : World\TileSet.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -280,6 +307,9 @@ help:
 	@echo ... World/Tile.obj
 	@echo ... World/Tile.i
 	@echo ... World/Tile.s
+	@echo ... World/TileSet.obj
+	@echo ... World/TileSet.i
+	@echo ... World/TileSet.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

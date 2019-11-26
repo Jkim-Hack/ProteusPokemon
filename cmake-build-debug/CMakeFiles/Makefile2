@@ -75,12 +75,12 @@ preinstall:
 CMakeFiles\ProteusPokemon.dir\all:
 	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\depend
 	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target ProteusPokemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target ProteusPokemon"
 .PHONY : CMakeFiles\ProteusPokemon.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\ProteusPokemon.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles 7
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\ProteusPokemon.dir\rule

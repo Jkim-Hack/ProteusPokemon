@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ProteusPokemon.dir/Player/Player.cpp.obj"
   "CMakeFiles/ProteusPokemon.dir/World/Texture.cpp.obj"
   "CMakeFiles/ProteusPokemon.dir/World/Tile.cpp.obj"
+  "CMakeFiles/ProteusPokemon.dir/World/TileSet.cpp.obj"
   "CMakeFiles/ProteusPokemon.dir/main.cpp.obj"
   "ProteusPokemon.exe"
   "ProteusPokemon.exe.manifest"

@@ -74,7 +74,7 @@ void Tile::onPlayerEnter(Player *player) {
 }
 
 void Tile::onPlayerExit() {
-    this->player = nullptr;
+    this->player = 0;
 }
 
 void Tile::draw_two_path_rect(int originX, int originY) {

@@ -3,4 +3,5 @@ project(ProteusPokemon)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ProteusPokemon main.cpp World/Tile.cpp World/Tile.h World/Texture.cpp World/Texture.h Player/Player.cpp Player/Player.h Player/Item.cpp Player/Item.h Libraries)
+add_executable(ProteusPokemon main.cpp World/Tile.cpp World/Tile.h World/Texture.cpp World/Texture.h Player/Player.cpp Player/Player.h Player/Item.cpp Player/Item.h Libraries World/TileSet.cpp
+        World/TileSet.h Music/IntroMusic.cpp lpng1637)

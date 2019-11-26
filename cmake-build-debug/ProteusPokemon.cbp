@@ -111,6 +111,12 @@
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/World/Tile.h">
 			<Option target="ProteusPokemon"/>
 		</Unit>
+		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/World/TileSet.cpp">
+			<Option target="ProteusPokemon"/>
+		</Unit>
+		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/World/TileSet.h">
+			<Option target="ProteusPokemon"/>
+		</Unit>
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/main.cpp">
 			<Option target="ProteusPokemon"/>
 		</Unit>

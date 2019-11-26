@@ -12,10 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39d9f1f4-7cdb-4dc9-86b3-8730cde318a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Music/IntroMusic.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World/TileSet.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World/TileSet.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Player/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Texture.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/World/Tile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/Tile.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProteusPokemon.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProteusPokemon.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,15 +65,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\johnk\CLionProjects\ProteusPokemon" />
       <recent name="C:\Users\johnk\CLionProjects\ProteusPokemon\Player" />
       <recent name="C:\Users\johnk\CLionProjects\ProteusPokemon\World" />
-      <recent name="C:\Users\johnk\CLionProjects\ProteusPokemon" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,6 +109,10 @@
       <workItem from="1574559479984" duration="2150000" />
       <workItem from="1574622238914" duration="11061000" />
       <workItem from="1574697125284" duration="5171000" />
+      <workItem from="1574715175729" duration="10216000" />
+      <workItem from="1574788401456" duration="784000" />
+      <workItem from="1574790229309" duration="6939000" />
+      <workItem from="1574799126757" duration="641000" />
     </task>
     <task id="LOCAL-00001" summary="initial path tile created">
       <created>1574660001058</created>
