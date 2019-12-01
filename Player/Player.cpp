@@ -10,7 +10,7 @@ Player::Player() {
     this->tile_pos_r = 0;
     this->tile_pos_c = 0;
     this->playerTexture.tiletype = PLAYER;
-
+    this->world = World();
     //0 = face down
     //1 = face up
     //2 = face left
@@ -154,6 +154,7 @@ Player::Player(int tile_pos_r, int tile_pos_c) {
     this->tile_pos_r = tile_pos_r;
     this->tile_pos_c = tile_pos_c;
     this->playerTexture.tiletype = PLAYER;
+    this->world = World();
 
     int sprite_0[] = {
             0x01, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01,
@@ -329,12 +330,15 @@ void Player::draw_player(int type) {
             pixels = &this->sprite5;
             reverse_pixels(pixels);
             break;
+        default:
+            pixels = &this->sprite0;
+            break;
     }
 
     //i = height //j = width
     for (int i = 0; i < 16; ++i) {
         for (int j = 0; j < 16; ++j) {
-            int pixel = *pixels[j + (i*16)];
+            int pixel = (*pixels)[j + (i*16)];
             switch (pixel) {
                 case 0:
                     LCD.SetFontColor(0x141614);
@@ -374,35 +378,39 @@ void Player::reverse_pixels(int (*pixels)[256]) {
 void Player::move_down() {
 
     draw_player(0);
-    Sleep(300);
+    Sleep(143);
     draw_player(3);
-    Sleep(300);
+    world.move_down();
+    Sleep(143);
 
 }
 
 void Player::move_up() {
 
     draw_player(1);
-    Sleep(300);
+    Sleep(143);
     draw_player(4);
-    Sleep(300);
+    world.move_up();
+    Sleep(143);
 
 }
 
 void Player::move_right() {
 
     draw_player(6);
-    Sleep(300);
+    Sleep(143);
     draw_player(7);
-    Sleep(300);
+    world.move_right();
+    Sleep(143);
 
 }
 
 void Player::move_left() {
 
     draw_player(2);
-    Sleep(300);
+    Sleep(143);
     draw_player(5);
-    Sleep(300);
+    world.move_left();
+    Sleep(143);
 
 }

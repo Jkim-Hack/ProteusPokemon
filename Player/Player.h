@@ -7,6 +7,7 @@
 
 #include "Item.h"
 #include "../World/Texture.h"
+#include "../World/World.h"
 
 class Player {
 
@@ -14,6 +15,7 @@ public:
     int tile_pos_r, tile_pos_c;
     int originX, originY;
     Texture playerTexture;
+    World world;
 
     Player();
     Player(int, int);

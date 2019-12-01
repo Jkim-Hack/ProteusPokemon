@@ -9,6 +9,12 @@ enum TILETYPE {
     TALLGRASS,
     PATH,
     NORMAL,
+    BAR,
+    ROCK,
+    STAIRS,
+    JUMPABLE,
+    GREEN1,
+    GRAVEL,
     PLAYER,
 };
 

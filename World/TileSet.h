@@ -7,6 +7,10 @@
 
 #include "Tile.h"
 
+struct Node{
+    Tile data[];
+};
+
 class TileSet {
 
 

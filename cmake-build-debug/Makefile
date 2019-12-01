@@ -124,6 +124,33 @@ ProteusPokemon\fast:
 	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\build
 .PHONY : ProteusPokemon\fast
 
+Music\Music.obj: Music\Music.cpp.obj
+
+.PHONY : Music\Music.obj
+
+# target to build an object file
+Music\Music.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Music\Music.cpp.obj
+.PHONY : Music\Music.cpp.obj
+
+Music\Music.i: Music\Music.cpp.i
+
+.PHONY : Music\Music.i
+
+# target to preprocess a source file
+Music\Music.cpp.i:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Music\Music.cpp.i
+.PHONY : Music\Music.cpp.i
+
+Music\Music.s: Music\Music.cpp.s
+
+.PHONY : Music\Music.s
+
+# target to generate assembly for a file
+Music\Music.cpp.s:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Music\Music.cpp.s
+.PHONY : Music\Music.cpp.s
+
 Player\Item.obj: Player\Item.cpp.obj
 
 .PHONY : Player\Item.obj
@@ -177,6 +204,60 @@ Player\Player.s: Player\Player.cpp.s
 Player\Player.cpp.s:
 	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Player\Player.cpp.s
 .PHONY : Player\Player.cpp.s
+
+Text.obj: Text.cpp.obj
+
+.PHONY : Text.obj
+
+# target to build an object file
+Text.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Text.cpp.obj
+.PHONY : Text.cpp.obj
+
+Text.i: Text.cpp.i
+
+.PHONY : Text.i
+
+# target to preprocess a source file
+Text.cpp.i:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Text.cpp.i
+.PHONY : Text.cpp.i
+
+Text.s: Text.cpp.s
+
+.PHONY : Text.s
+
+# target to generate assembly for a file
+Text.cpp.s:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Text.cpp.s
+.PHONY : Text.cpp.s
+
+Util\PixelLCDConvert.obj: Util\PixelLCDConvert.cpp.obj
+
+.PHONY : Util\PixelLCDConvert.obj
+
+# target to build an object file
+Util\PixelLCDConvert.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Util\PixelLCDConvert.cpp.obj
+.PHONY : Util\PixelLCDConvert.cpp.obj
+
+Util\PixelLCDConvert.i: Util\PixelLCDConvert.cpp.i
+
+.PHONY : Util\PixelLCDConvert.i
+
+# target to preprocess a source file
+Util\PixelLCDConvert.cpp.i:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Util\PixelLCDConvert.cpp.i
+.PHONY : Util\PixelLCDConvert.cpp.i
+
+Util\PixelLCDConvert.s: Util\PixelLCDConvert.cpp.s
+
+.PHONY : Util\PixelLCDConvert.s
+
+# target to generate assembly for a file
+Util\PixelLCDConvert.cpp.s:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\Util\PixelLCDConvert.cpp.s
+.PHONY : Util\PixelLCDConvert.cpp.s
 
 World\Texture.obj: World\Texture.cpp.obj
 
@@ -259,6 +340,33 @@ World\TileSet.cpp.s:
 	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.s
 .PHONY : World\TileSet.cpp.s
 
+World\World.obj: World\World.cpp.obj
+
+.PHONY : World\World.obj
+
+# target to build an object file
+World\World.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\World\World.cpp.obj
+.PHONY : World\World.cpp.obj
+
+World\World.i: World\World.cpp.i
+
+.PHONY : World\World.i
+
+# target to preprocess a source file
+World\World.cpp.i:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\World\World.cpp.i
+.PHONY : World\World.cpp.i
+
+World\World.s: World\World.cpp.s
+
+.PHONY : World\World.s
+
+# target to generate assembly for a file
+World\World.cpp.s:
+	$(MAKE) -f CMakeFiles\ProteusPokemon.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ProteusPokemon.dir\World\World.cpp.s
+.PHONY : World\World.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -295,12 +403,21 @@ help:
 	@echo ... edit_cache
 	@echo ... ProteusPokemon
 	@echo ... rebuild_cache
+	@echo ... Music/Music.obj
+	@echo ... Music/Music.i
+	@echo ... Music/Music.s
 	@echo ... Player/Item.obj
 	@echo ... Player/Item.i
 	@echo ... Player/Item.s
 	@echo ... Player/Player.obj
 	@echo ... Player/Player.i
 	@echo ... Player/Player.s
+	@echo ... Text.obj
+	@echo ... Text.i
+	@echo ... Text.s
+	@echo ... Util/PixelLCDConvert.obj
+	@echo ... Util/PixelLCDConvert.i
+	@echo ... Util/PixelLCDConvert.s
 	@echo ... World/Texture.obj
 	@echo ... World/Texture.i
 	@echo ... World/Texture.s
@@ -310,6 +427,9 @@ help:
 	@echo ... World/TileSet.obj
 	@echo ... World/TileSet.i
 	@echo ... World/TileSet.s
+	@echo ... World/World.obj
+	@echo ... World/World.i
+	@echo ... World/World.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
