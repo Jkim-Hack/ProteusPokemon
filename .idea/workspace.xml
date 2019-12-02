@@ -12,36 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39d9f1f4-7cdb-4dc9-86b3-8730cde318a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Music/Music.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Text.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Text.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Util/PixelLCDConvert.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Util/PixelLCDConvert.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Util/copyright.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Util/intro.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World/World.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World/World.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World/route1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Music/IntroMusic.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Player/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Texture.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util/PixelLCDConvert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Util/PixelLCDConvert.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/World/Tile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/Tile.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/TileSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/TileSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProteusPokemon.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProteusPokemon.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/World.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/World.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/World.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/route1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/World/route1.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,14 +55,14 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Test" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\johnk\CLionProjects\ProteusPokemon\Util" />
       <recent name="C:\Users\johnk\CLionProjects\ProteusPokemon\World" />
+      <recent name="C:\Users\johnk\CLionProjects\ProteusPokemon\Util" />
       <recent name="C:\Users\johnk\CLionProjects\ProteusPokemon" />
       <recent name="C:\Users\johnk\CLionProjects\ProteusPokemon\Player" />
     </key>
@@ -130,6 +107,10 @@
       <workItem from="1574986034787" duration="1219000" />
       <workItem from="1575011941878" duration="22279000" />
       <workItem from="1575146929127" duration="12181000" />
+      <workItem from="1575183336675" duration="137000" />
+      <workItem from="1575223032895" duration="1128000" />
+      <workItem from="1575225890518" duration="4574000" />
+      <workItem from="1575306635446" duration="3549000" />
     </task>
     <task id="LOCAL-00001" summary="initial path tile created">
       <created>1574660001058</created>
@@ -145,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574800577296</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added movement, route1, intro/copyright">
+      <created>1575183386558</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575183386558</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +156,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial path tile created" />
     <MESSAGE value="Added player and sound" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added player and sound" />
+    <MESSAGE value="Added movement, route1, intro/copyright" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added movement, route1, intro/copyright" />
   </component>
 </project>

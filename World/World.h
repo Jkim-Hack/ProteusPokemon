@@ -12,10 +12,11 @@ class World {
 public:
     Tile* map[18][36];
     World();
-    void move_right();
-    void move_left();
-    void move_up();
-    void move_down();
+
+    bool move_right(int, int);
+    bool move_left(int, int);
+    bool move_up(int, int);
+    bool move_down(int, int);
 };
 
 

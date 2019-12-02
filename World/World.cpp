@@ -32,31 +32,73 @@ World::World() {
                     break;
                 case '#':
                     Texture texture2;
-                    texture2.tiletype = GREEN1;
+                    texture2.tiletype = PATH;
                     texture2.encounterRate = 0;
                     Tile tile2(count * 16, i * 16, texture2);
                     map[count][i] = &tile2;
                     break;
                 case '$':
                     Texture texture3;
-                    texture3.tiletype = ROCK;
+                    texture3.tiletype = GREEN1;
                     texture3.encounterRate = 0;
                     Tile tile3(count * 16, i * 16, texture3);
                     map[count][i] = &tile3;
                     break;
                 case '%':
                     Texture texture4;
-                    texture4.tiletype = JUMPABLE;
+                    texture4.tiletype = GREEN1;
                     texture4.encounterRate = 0;
                     Tile tile4(count * 16, i * 16, texture4);
                     map[count][i] = &tile4;
                     break;
                 case '*':
                     Texture texture5;
-                    texture5.tiletype = TALLGRASS;
-                    texture5.encounterRate = 50;
+                    texture5.tiletype = ROCK;
+                    texture5.encounterRate = 0;
                     Tile tile5(count * 16, i * 16, texture5);
                     map[count][i] = &tile5;
+                    break;
+                case ')':
+                    Texture texture6;
+                    texture6.tiletype = TALLGRASS;
+                    texture6.encounterRate = 50;
+                    Tile tile6(count * 16, i * 16, texture6);
+                    map[count][i] = &tile6;
+                    break;
+                case '+':
+                    Texture texture7;
+                    texture7.tiletype = JUMPABLE;
+                    texture7.encounterRate = 50;
+                    Tile tile7(count * 16, i * 16, texture7);
+                    map[count][i] = &tile7;
+                    break;
+                case '~':
+                    Texture texture8;
+                    texture8.tiletype = JUMPABLE;
+                    texture8.encounterRate = 0;
+                    Tile tile8(count * 16, i * 16, texture8);
+                    map[count][i] = &tile8;
+                    break;
+                case '&':
+                    Texture texture9;
+                    texture9.tiletype = JUMPABLE;
+                    texture9.encounterRate = 0;
+                    Tile tile9(count * 16, i * 16, texture9);
+                    map[count][i] = &tile9;
+                    break;
+                case '=':
+                    Texture texture10;
+                    texture10.tiletype = JUMPABLE;
+                    texture10.encounterRate = 0;
+                    Tile tile10(count * 16, i * 16, texture10);
+                    map[count][i] = &tile10;
+                    break;
+                default:
+                    Texture texture11;
+                    texture11.tiletype = PATH;
+                    texture11.encounterRate = 0;
+                    Tile tile11(count * 16, i * 16, texture11);
+                    map[count][i] = &tile11;
                     break;
             }
         }
@@ -65,52 +107,64 @@ World::World() {
 
 }
 
-void World::move_up() {
+bool World::move_up(int x1, int y1) {
     for (int i = 0; i < 18; ++i) {
         for (int j = 0; j < 36; ++j) {
             int x = map[i][j]->originX;
             int y = map[i][j]->originY;
             y--;
-            if(map[i][j]->can_down)
+            if(map[x1][y1]->can_down)
                 map[i][j]->set_origin(x,y);
+            else
+                return false;
         }
     }
+    return true;
 }
 
-void World::move_down() {
+bool World::move_down(int x1, int y1) {
 
     for (int i = 0; i < 18; ++i) {
         for (int j = 0; j < 36; ++j) {
             int x = map[i][j]->originX;
             int y = map[i][j]->originY;
             y++;
-            if(map[i][j]->can_up)
+            if(map[x1][y1]->can_up)
                 map[i][j]->set_origin(x,y);
+            else
+                return false;
         }
     }
+    return true;
 }
 
-void World::move_left() {
+bool World::move_left(int x1, int y1) {
 
     for (int i = 0; i < 18; ++i) {
         for (int j = 0; j < 36; ++j) {
             int x = map[i][j]->originX;
             int y = map[i][j]->originY;
             x++;
-            if(map[i][j]->can_right)
+            if(map[x1][y1]->can_right)
                 map[i][j]->set_origin(x,y);
+            else
+                return false;
         }
     }
+    return true;
 }
 
-void World::move_right() {
+bool World::move_right(int x1, int y1) {
     for (int i = 0; i < 18; ++i) {
         for (int j = 0; j < 36; ++j) {
             int x = map[i][j]->originX;
             int y = map[i][j]->originY;
             x--;
-            if(map[i][j]->can_left)
+            if(map[x1][y1]->can_left)
                 map[i][j]->set_origin(x,y);
+            else
+                return false;
         }
     }
+    return true;
 }

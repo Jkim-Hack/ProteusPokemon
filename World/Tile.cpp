@@ -354,7 +354,7 @@ void Tile::draw_gravel(int originX, int originY) {
     //i = height //j = width
     for (int i = 0; i < 16; ++i) {
         for (int j = 0; j < 16; ++j) {
-            int pixel = this->green[j + (i*16)];
+            int pixel = this->gravel[j + (i*16)];
             switch (pixel) {
                 case 0:
                     LCD.SetFontColor(0xfcfafc);

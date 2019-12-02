@@ -115,7 +115,8 @@ void PixelLCDConvert::getDelims(char* line, int linenum) {
     int i = 0;
     while (pch != NULL && i < sizeX)
     {
-        map[linenum][i] = (int)pch;
+        map[linenum][i] = (int)strtol(pch, NULL, 0);
         pch = strtok (NULL, ", ");
+        ++i;
     }
 }

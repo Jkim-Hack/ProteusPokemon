@@ -6,11 +6,16 @@
 #include "../Libraries/FEHLCD.h"
 #include "../Libraries/FEHUtility.h"
 
+#define LENGTH 320
+#define WIDTH 240
+
 Player::Player() {
     this->tile_pos_r = 0;
     this->tile_pos_c = 0;
     this->playerTexture.tiletype = PLAYER;
     this->world = World();
+    this->originX = LENGTH/2 - 8;
+    this->originY = WIDTH/2 - 8;
     //0 = face down
     //1 = face up
     //2 = face left
@@ -155,6 +160,8 @@ Player::Player(int tile_pos_r, int tile_pos_c) {
     this->tile_pos_c = tile_pos_c;
     this->playerTexture.tiletype = PLAYER;
     this->world = World();
+    this->originX = LENGTH/2 - 8;
+    this->originY = WIDTH/2 - 8;
 
     int sprite_0[] = {
             0x01, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x01,
@@ -380,7 +387,8 @@ void Player::move_down() {
     draw_player(0);
     Sleep(143);
     draw_player(3);
-    world.move_down();
+    if (world.move_down(this->tile_pos_c, this->tile_pos_r))
+        this->tile_pos_r + 1;
     Sleep(143);
 
 }
@@ -390,7 +398,8 @@ void Player::move_up() {
     draw_player(1);
     Sleep(143);
     draw_player(4);
-    world.move_up();
+    if(world.move_up(this->tile_pos_c, this->tile_pos_r))
+        this->tile_pos_r - 1;
     Sleep(143);
 
 }
@@ -400,7 +409,8 @@ void Player::move_right() {
     draw_player(6);
     Sleep(143);
     draw_player(7);
-    world.move_right();
+    if(world.move_right(this->tile_pos_c, this->tile_pos_r))
+        this->tile_pos_c + 1;
     Sleep(143);
 
 }
@@ -410,7 +420,8 @@ void Player::move_left() {
     draw_player(2);
     Sleep(143);
     draw_player(5);
-    world.move_left();
+    if(world.move_left(this->tile_pos_c, this->tile_pos_r))
+        this->tile_pos_c-1;
     Sleep(143);
 
 }
