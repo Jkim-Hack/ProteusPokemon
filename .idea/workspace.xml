@@ -12,13 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39d9f1f4-7cdb-4dc9-86b3-8730cde318a9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Util/PixelLCDConvert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Util/PixelLCDConvert.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/World/Tile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/Tile.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/World/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/World.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/World.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/World.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/route1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/World/route1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +111,7 @@
       <workItem from="1575183336675" duration="137000" />
       <workItem from="1575223032895" duration="1128000" />
       <workItem from="1575225890518" duration="4574000" />
-      <workItem from="1575306635446" duration="3549000" />
+      <workItem from="1575306635446" duration="12114000" />
     </task>
     <task id="LOCAL-00001" summary="initial path tile created">
       <created>1574660001058</created>
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575183386558</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added movement, route1, intro/copyright">
+      <created>1575316614111</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575316614111</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

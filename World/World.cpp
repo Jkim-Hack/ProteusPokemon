@@ -12,104 +12,126 @@ World::World() {
 
     char line[19];
     int count = 0;
-    while(SD.fscanf("route1.txt", count, "%s", line) != EOF) {
+    while(SD.fscanf("r1.txt", count, "%s", line) != EOF) {
         for (int i = 0; i < 18; ++i) {
             char c = line[i];
             switch (c) {
-                case '!':
+                case '!': {
                     Texture texture;
                     texture.tiletype = GRAVEL;
                     texture.encounterRate = 0;
-                    Tile tile(count * 16, i * 16, texture);
+                    Tile tile(i * 16, count * 16,texture);
                     map[count][i] = &tile;
                     break;
-                case '@':
+                }
+                case '@': {
                     Texture texture1;
                     texture1.tiletype = BAR;
                     texture1.encounterRate = 0;
-                    Tile tile1(count * 16, i * 16, texture1);
+                    Tile tile1(i * 16, count * 16, texture1);
                     map[count][i] = &tile1;
                     break;
-                case '#':
+                }
+                case '#': {
                     Texture texture2;
                     texture2.tiletype = PATH;
                     texture2.encounterRate = 0;
-                    Tile tile2(count * 16, i * 16, texture2);
+                    Tile tile2(i * 16, count * 16, texture2);
                     map[count][i] = &tile2;
                     break;
-                case '$':
+                }
+                case '$': {
                     Texture texture3;
                     texture3.tiletype = GREEN1;
                     texture3.encounterRate = 0;
-                    Tile tile3(count * 16, i * 16, texture3);
+                    Tile tile3(i * 16, count * 16, texture3);
                     map[count][i] = &tile3;
                     break;
-                case '%':
+                }
+                case '%': {
                     Texture texture4;
                     texture4.tiletype = GREEN1;
                     texture4.encounterRate = 0;
-                    Tile tile4(count * 16, i * 16, texture4);
+                    Tile tile4(i * 16, count * 16, texture4);
                     map[count][i] = &tile4;
                     break;
-                case '*':
+                }
+                case '*': {
                     Texture texture5;
                     texture5.tiletype = ROCK;
                     texture5.encounterRate = 0;
-                    Tile tile5(count * 16, i * 16, texture5);
+                    Tile tile5(i * 16, count * 16, texture5);
                     map[count][i] = &tile5;
                     break;
-                case ')':
+                }
+                case ')': {
+
                     Texture texture6;
                     texture6.tiletype = TALLGRASS;
                     texture6.encounterRate = 50;
-                    Tile tile6(count * 16, i * 16, texture6);
+                    Tile tile6(i * 16, count * 16, texture6);
                     map[count][i] = &tile6;
                     break;
-                case '+':
+                }
+                case '+': {
                     Texture texture7;
                     texture7.tiletype = JUMPABLE;
                     texture7.encounterRate = 50;
-                    Tile tile7(count * 16, i * 16, texture7);
+                    Tile tile7(i * 16, count * 16, texture7);
                     map[count][i] = &tile7;
                     break;
-                case '~':
+                }
+                case '~': {
                     Texture texture8;
                     texture8.tiletype = JUMPABLE;
                     texture8.encounterRate = 0;
-                    Tile tile8(count * 16, i * 16, texture8);
+                    Tile tile8(i * 16, count * 16, texture8);
                     map[count][i] = &tile8;
                     break;
-                case '&':
+                }
+                case '&': {
                     Texture texture9;
                     texture9.tiletype = JUMPABLE;
                     texture9.encounterRate = 0;
-                    Tile tile9(count * 16, i * 16, texture9);
+                    Tile tile9(i * 16, count * 16, texture9);
                     map[count][i] = &tile9;
                     break;
-                case '=':
+                }
+                case '=': {
                     Texture texture10;
                     texture10.tiletype = JUMPABLE;
                     texture10.encounterRate = 0;
-                    Tile tile10(count * 16, i * 16, texture10);
+                    Tile tile10(i * 16, count * 16, texture10);
                     map[count][i] = &tile10;
                     break;
-                default:
+                }
+                default: {
                     Texture texture11;
                     texture11.tiletype = PATH;
                     texture11.encounterRate = 0;
-                    Tile tile11(count * 16, i * 16, texture11);
+                    Tile tile11(i * 16, count * 16, texture11);
                     map[count][i] = &tile11;
                     break;
+                }
             }
         }
         count++;
     }
 
+    for (int i = 0; i < 36; ++i) {
+        for (int j = 0; j < 18; ++j) {
+            int x = map[i][j]->originX;
+            int y = map[i][j]->originY;
+            y+=40;
+            map[i][j]->set_origin(x,y);
+        }
+    }
+
 }
 
 bool World::move_up(int x1, int y1) {
-    for (int i = 0; i < 18; ++i) {
-        for (int j = 0; j < 36; ++j) {
+    for (int i = 0; i < 36; ++i) {
+        for (int j = 0; j < 18; ++j) {
             int x = map[i][j]->originX;
             int y = map[i][j]->originY;
             y--;
@@ -124,8 +146,8 @@ bool World::move_up(int x1, int y1) {
 
 bool World::move_down(int x1, int y1) {
 
-    for (int i = 0; i < 18; ++i) {
-        for (int j = 0; j < 36; ++j) {
+    for (int i = 0; i < 36; ++i) {
+        for (int j = 0; j < 18; ++j) {
             int x = map[i][j]->originX;
             int y = map[i][j]->originY;
             y++;
@@ -140,8 +162,8 @@ bool World::move_down(int x1, int y1) {
 
 bool World::move_left(int x1, int y1) {
 
-    for (int i = 0; i < 18; ++i) {
-        for (int j = 0; j < 36; ++j) {
+    for (int i = 0; i < 36; ++i) {
+        for (int j = 0; j < 18; ++j) {
             int x = map[i][j]->originX;
             int y = map[i][j]->originY;
             x++;
@@ -155,8 +177,8 @@ bool World::move_left(int x1, int y1) {
 }
 
 bool World::move_right(int x1, int y1) {
-    for (int i = 0; i < 18; ++i) {
-        for (int j = 0; j < 36; ++j) {
+    for (int i = 0; i < 36; ++i) {
+        for (int j = 0; j < 18; ++j) {
             int x = map[i][j]->originX;
             int y = map[i][j]->originY;
             x--;

@@ -13,7 +13,7 @@ PixelLCDConvert::PixelLCDConvert(int sizeX, int sizeY) {
     this->sizeX = sizeX;
     this->sizeY = sizeY;
     for (int i = 0; i < this->sizeY; ++i) {
-        map[i] = (int*)malloc(this->sizeX* sizeof(int));
+        map[i] = (int*)std::malloc(this->sizeX* sizeof(int));
     }
 }
 
@@ -111,12 +111,12 @@ void PixelLCDConvert::addToMap(char filename[]) {
 
 void PixelLCDConvert::getDelims(char* line, int linenum) {
     char * pch;
-    pch = strtok (line,", ");
+    pch = std::strtok (line,", ");
     int i = 0;
     while (pch != NULL && i < sizeX)
     {
-        map[linenum][i] = (int)strtol(pch, NULL, 0);
-        pch = strtok (NULL, ", ");
+        map[linenum][i] = (int)std::strtol(pch, NULL, 0);
+        pch = std::strtok (NULL, ", ");
         ++i;
     }
 }
