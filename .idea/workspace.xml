@@ -12,13 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39d9f1f4-7cdb-4dc9-86b3-8730cde318a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Util/PixelLCDConvert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Util/PixelLCDConvert.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/Tile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/Tile.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/World/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/World.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Text.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Text.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Text.h" beforeDir="false" afterPath="$PROJECT_DIR$/Text.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,6 +52,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Test" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -111,7 +109,7 @@
       <workItem from="1575183336675" duration="137000" />
       <workItem from="1575223032895" duration="1128000" />
       <workItem from="1575225890518" duration="4574000" />
-      <workItem from="1575306635446" duration="12114000" />
+      <workItem from="1575306635446" duration="15154000" />
     </task>
     <task id="LOCAL-00001" summary="initial path tile created">
       <created>1574660001058</created>
@@ -141,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575316614111</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added fixes">
+      <created>1575349363289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575349363289</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +170,7 @@
     <MESSAGE value="initial path tile created" />
     <MESSAGE value="Added player and sound" />
     <MESSAGE value="Added movement, route1, intro/copyright" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added movement, route1, intro/copyright" />
+    <MESSAGE value="Added fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added fixes" />
   </component>
 </project>

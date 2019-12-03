@@ -21,7 +21,6 @@ int main()
     left_button.ChangeLabelString("LEFT");
     left_button.Draw();
 
-
     FEHIcon::Icon A_button;
     A_button.SetProperties("BUTTON", 270, 170, 30, 30, GRAY, GRAY);
     A_button.ChangeLabelString("A");

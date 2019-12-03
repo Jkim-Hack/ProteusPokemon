@@ -3,3 +3,8 @@
 //
 
 #include "Text.h"
+
+Text::Text(std::string text) {
+    this->text = text;
+
+}
