@@ -9,7 +9,7 @@
 #define LENGTH 320
 #define WIDTH 240
 
-Player::Player() {
+Player::Player() { //One class
 
     //Set player tile position to (9,7) (x,y)
     this->tile_pos_r = 7;
@@ -377,7 +377,7 @@ void Player::draw_player(int type) {
     for (int i = 0; i < 16; ++i) {
         for (int j = 0; j < 16; ++j) {
             int pixel = (*pixels)[j + (i*16)];
-            switch (pixel) {
+            switch (pixel) { //Switch case
                 case 0:
                     LCD.SetFontColor(0x141614);
                     LCD.DrawPixel(this->originX + j, this->originY + i);
@@ -405,7 +405,7 @@ void Player::draw_player(int type) {
 void Player::reverse_pixels(short int (*pixels)[256]) {
 
     //Reverse the pixels vertically so that the horizontal orientation is correct
-    for (int i = 0; i < 16; ++i) {
+    for (int i = 0; i < 16; ++i) { //For loop
         for (int j = 0; j < 8; ++j) {
             int temp = *pixels[(i*16)+j];
             *pixels[(i*16) + j] = *pixels[(i*16) + (8-j-1)];

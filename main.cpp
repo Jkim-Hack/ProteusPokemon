@@ -4,6 +4,7 @@
 #include "Util/PixelLCDConvert.h"
 #include "Libraries/FEHUtility.h"
 #include "Libraries/FEHSD.h"
+#include "Music/Music.cpp"
 
 //Instantiate global variables
 int pokemon_captured = 0;
@@ -92,9 +93,9 @@ void displayMenu(){
     stats_button.Draw();
 
     float x, y;
-    while(true) {
+    while(true) { //While loop
         LCD.Touch(&x, &y); //Get the touch x, y positions
-        if(cont_button.Pressed(x,y,0)) { //On continue pressed, break the loop
+        if(cont_button.Pressed(x,y,0)) { //On continue pressed, break the loop //Also if else ladder
             break;
         } else if(new_button.Pressed(x, y, 0)) { //On new game button pressed, write new stats and break the loop.
             newStats();
@@ -108,6 +109,10 @@ void displayMenu(){
         }
     }
 
+    Music music();
+    do { //do while
+        Music::playRoute1();
+    } while(true);
 
 }
 
