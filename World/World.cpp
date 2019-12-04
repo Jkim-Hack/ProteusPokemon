@@ -10,11 +10,13 @@
 
 World::World() {
 
-    char line[19];
-    int count = 0;
+    char line[19]; //Get the line
+    int count = 0; //The row position
+    //r1.txt is the txt file with all the tile positions
     while(SD.fscanf("r1.txt", count, "%s", line) != EOF) {
         for (int i = 0; i < 18; ++i) {
-            char c = line[i];
+            char c = line[i]; //Get each character
+            //For each character within the txt tile set, draw the tile with the texture.
             switch (c) {
                 case '!': {
                     Texture texture;
@@ -118,75 +120,5 @@ World::World() {
         count++;
     }
 
-    for (int i = 0; i < 36; ++i) {
-        for (int j = 0; j < 18; ++j) {
-            int x = map[i][j]->originX;
-            int y = map[i][j]->originY;
-            y+=40;
-            map[i][j]->set_origin(x,y);
-        }
-    }
-
 }
 
-bool World::move_up(int x1, int y1) {
-    for (int i = 0; i < 36; ++i) {
-        for (int j = 0; j < 18; ++j) {
-            int x = map[i][j]->originX;
-            int y = map[i][j]->originY;
-            y--;
-            if(map[x1][y1]->can_down)
-                map[i][j]->set_origin(x,y);
-            else
-                return false;
-        }
-    }
-    return true;
-}
-
-bool World::move_down(int x1, int y1) {
-
-    for (int i = 0; i < 36; ++i) {
-        for (int j = 0; j < 18; ++j) {
-            int x = map[i][j]->originX;
-            int y = map[i][j]->originY;
-            y++;
-            if(map[x1][y1]->can_up)
-                map[i][j]->set_origin(x,y);
-            else
-                return false;
-        }
-    }
-    return true;
-}
-
-bool World::move_left(int x1, int y1) {
-
-    for (int i = 0; i < 36; ++i) {
-        for (int j = 0; j < 18; ++j) {
-            int x = map[i][j]->originX;
-            int y = map[i][j]->originY;
-            x++;
-            if(map[x1][y1]->can_right)
-                map[i][j]->set_origin(x,y);
-            else
-                return false;
-        }
-    }
-    return true;
-}
-
-bool World::move_right(int x1, int y1) {
-    for (int i = 0; i < 36; ++i) {
-        for (int j = 0; j < 18; ++j) {
-            int x = map[i][j]->originX;
-            int y = map[i][j]->originY;
-            x--;
-            if(map[x1][y1]->can_left)
-                map[i][j]->set_origin(x,y);
-            else
-                return false;
-        }
-    }
-    return true;
-}

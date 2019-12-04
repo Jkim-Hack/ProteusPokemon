@@ -5,6 +5,7 @@
 #ifndef PROTEUSPOKEMON_PIXELLCDCONVERT_H
 #define PROTEUSPOKEMON_PIXELLCDCONVERT_H
 
+//The enums of SCREENTYPE
 enum SCREENTYPE {
     COPYRIGHT,
     INTRO
@@ -13,17 +14,16 @@ enum SCREENTYPE {
 class PixelLCDConvert {
 
 private:
-    int sizeX, sizeY;
-    int** map;
+    //Initialize sizes
+    int sizeX;
 
 public:
-    PixelLCDConvert(int, int);
-    void pixelarr_to_lcd(char [50], SCREENTYPE);
+    PixelLCDConvert(int);
+    void pixelarr_to_lcd(char [50], SCREENTYPE); //Changes the pixel array into LCD pixels
 
 private:
-    void addToMap(char [50]);
-    void showtoscreen(const char*[]);
-    void getDelims(char *, int);
+    void addToMapCopyright(char [50]); //Adds the copyright
+    void addToMapIntro(char [50]); //Adds the intro
 };
 
 

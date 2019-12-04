@@ -5,13 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/johnk/CLionProjects/ProteusPokemon/Music/Music.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/Music/Music.cpp.obj"
-  "C:/Users/johnk/CLionProjects/ProteusPokemon/Player/Item.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/Player/Item.cpp.obj"
   "C:/Users/johnk/CLionProjects/ProteusPokemon/Player/Player.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/Player/Player.cpp.obj"
-  "C:/Users/johnk/CLionProjects/ProteusPokemon/Text.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/Text.cpp.obj"
   "C:/Users/johnk/CLionProjects/ProteusPokemon/Util/PixelLCDConvert.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/Util/PixelLCDConvert.cpp.obj"
-  "C:/Users/johnk/CLionProjects/ProteusPokemon/World/Texture.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/World/Texture.cpp.obj"
   "C:/Users/johnk/CLionProjects/ProteusPokemon/World/Tile.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/World/Tile.cpp.obj"
-  "C:/Users/johnk/CLionProjects/ProteusPokemon/World/TileSet.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/World/TileSet.cpp.obj"
   "C:/Users/johnk/CLionProjects/ProteusPokemon/World/World.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/World/World.cpp.obj"
   "C:/Users/johnk/CLionProjects/ProteusPokemon/main.cpp" "C:/Users/johnk/CLionProjects/ProteusPokemon/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/main.cpp.obj"
   )

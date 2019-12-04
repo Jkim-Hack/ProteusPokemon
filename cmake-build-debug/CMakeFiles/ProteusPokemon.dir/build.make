@@ -96,28 +96,9 @@ CMakeFiles\ProteusPokemon.dir\World\Tile.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ProteusPokemon.dir\World\Tile.cpp.s /c C:\Users\johnk\CLionProjects\ProteusPokemon\World\Tile.cpp
 <<
 
-CMakeFiles\ProteusPokemon.dir\World\Texture.cpp.obj: CMakeFiles\ProteusPokemon.dir\flags.make
-CMakeFiles\ProteusPokemon.dir\World\Texture.cpp.obj: ..\World\Texture.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProteusPokemon.dir/World/Texture.cpp.obj"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ProteusPokemon.dir\World\Texture.cpp.obj /FdCMakeFiles\ProteusPokemon.dir\ /FS -c C:\Users\johnk\CLionProjects\ProteusPokemon\World\Texture.cpp
-<<
-
-CMakeFiles\ProteusPokemon.dir\World\Texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProteusPokemon.dir/World/Texture.cpp.i"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe > CMakeFiles\ProteusPokemon.dir\World\Texture.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\johnk\CLionProjects\ProteusPokemon\World\Texture.cpp
-<<
-
-CMakeFiles\ProteusPokemon.dir\World\Texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProteusPokemon.dir/World/Texture.cpp.s"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ProteusPokemon.dir\World\Texture.cpp.s /c C:\Users\johnk\CLionProjects\ProteusPokemon\World\Texture.cpp
-<<
-
 CMakeFiles\ProteusPokemon.dir\Player\Player.cpp.obj: CMakeFiles\ProteusPokemon.dir\flags.make
 CMakeFiles\ProteusPokemon.dir\Player\Player.cpp.obj: ..\Player\Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProteusPokemon.dir/Player/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProteusPokemon.dir/Player/Player.cpp.obj"
 	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ProteusPokemon.dir\Player\Player.cpp.obj /FdCMakeFiles\ProteusPokemon.dir\ /FS -c C:\Users\johnk\CLionProjects\ProteusPokemon\Player\Player.cpp
 <<
@@ -134,47 +115,9 @@ CMakeFiles\ProteusPokemon.dir\Player\Player.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ProteusPokemon.dir\Player\Player.cpp.s /c C:\Users\johnk\CLionProjects\ProteusPokemon\Player\Player.cpp
 <<
 
-CMakeFiles\ProteusPokemon.dir\Player\Item.cpp.obj: CMakeFiles\ProteusPokemon.dir\flags.make
-CMakeFiles\ProteusPokemon.dir\Player\Item.cpp.obj: ..\Player\Item.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProteusPokemon.dir/Player/Item.cpp.obj"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ProteusPokemon.dir\Player\Item.cpp.obj /FdCMakeFiles\ProteusPokemon.dir\ /FS -c C:\Users\johnk\CLionProjects\ProteusPokemon\Player\Item.cpp
-<<
-
-CMakeFiles\ProteusPokemon.dir\Player\Item.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProteusPokemon.dir/Player/Item.cpp.i"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe > CMakeFiles\ProteusPokemon.dir\Player\Item.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\johnk\CLionProjects\ProteusPokemon\Player\Item.cpp
-<<
-
-CMakeFiles\ProteusPokemon.dir\Player\Item.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProteusPokemon.dir/Player/Item.cpp.s"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ProteusPokemon.dir\Player\Item.cpp.s /c C:\Users\johnk\CLionProjects\ProteusPokemon\Player\Item.cpp
-<<
-
-CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.obj: CMakeFiles\ProteusPokemon.dir\flags.make
-CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.obj: ..\World\TileSet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProteusPokemon.dir/World/TileSet.cpp.obj"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.obj /FdCMakeFiles\ProteusPokemon.dir\ /FS -c C:\Users\johnk\CLionProjects\ProteusPokemon\World\TileSet.cpp
-<<
-
-CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProteusPokemon.dir/World/TileSet.cpp.i"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe > CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\johnk\CLionProjects\ProteusPokemon\World\TileSet.cpp
-<<
-
-CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProteusPokemon.dir/World/TileSet.cpp.s"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.s /c C:\Users\johnk\CLionProjects\ProteusPokemon\World\TileSet.cpp
-<<
-
 CMakeFiles\ProteusPokemon.dir\Music\Music.cpp.obj: CMakeFiles\ProteusPokemon.dir\flags.make
 CMakeFiles\ProteusPokemon.dir\Music\Music.cpp.obj: ..\Music\Music.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProteusPokemon.dir/Music/Music.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProteusPokemon.dir/Music/Music.cpp.obj"
 	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ProteusPokemon.dir\Music\Music.cpp.obj /FdCMakeFiles\ProteusPokemon.dir\ /FS -c C:\Users\johnk\CLionProjects\ProteusPokemon\Music\Music.cpp
 <<
@@ -193,7 +136,7 @@ CMakeFiles\ProteusPokemon.dir\Music\Music.cpp.s: cmake_force
 
 CMakeFiles\ProteusPokemon.dir\World\World.cpp.obj: CMakeFiles\ProteusPokemon.dir\flags.make
 CMakeFiles\ProteusPokemon.dir\World\World.cpp.obj: ..\World\World.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProteusPokemon.dir/World/World.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProteusPokemon.dir/World/World.cpp.obj"
 	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ProteusPokemon.dir\World\World.cpp.obj /FdCMakeFiles\ProteusPokemon.dir\ /FS -c C:\Users\johnk\CLionProjects\ProteusPokemon\World\World.cpp
 <<
@@ -210,28 +153,9 @@ CMakeFiles\ProteusPokemon.dir\World\World.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ProteusPokemon.dir\World\World.cpp.s /c C:\Users\johnk\CLionProjects\ProteusPokemon\World\World.cpp
 <<
 
-CMakeFiles\ProteusPokemon.dir\Text.cpp.obj: CMakeFiles\ProteusPokemon.dir\flags.make
-CMakeFiles\ProteusPokemon.dir\Text.cpp.obj: ..\Text.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProteusPokemon.dir/Text.cpp.obj"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ProteusPokemon.dir\Text.cpp.obj /FdCMakeFiles\ProteusPokemon.dir\ /FS -c C:\Users\johnk\CLionProjects\ProteusPokemon\Text.cpp
-<<
-
-CMakeFiles\ProteusPokemon.dir\Text.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProteusPokemon.dir/Text.cpp.i"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe > CMakeFiles\ProteusPokemon.dir\Text.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\johnk\CLionProjects\ProteusPokemon\Text.cpp
-<<
-
-CMakeFiles\ProteusPokemon.dir\Text.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProteusPokemon.dir/Text.cpp.s"
-	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ProteusPokemon.dir\Text.cpp.s /c C:\Users\johnk\CLionProjects\ProteusPokemon\Text.cpp
-<<
-
 CMakeFiles\ProteusPokemon.dir\Util\PixelLCDConvert.cpp.obj: CMakeFiles\ProteusPokemon.dir\flags.make
 CMakeFiles\ProteusPokemon.dir\Util\PixelLCDConvert.cpp.obj: ..\Util\PixelLCDConvert.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProteusPokemon.dir/Util/PixelLCDConvert.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProteusPokemon.dir/Util/PixelLCDConvert.cpp.obj"
 	C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ProteusPokemon.dir\Util\PixelLCDConvert.cpp.obj /FdCMakeFiles\ProteusPokemon.dir\ /FS -c C:\Users\johnk\CLionProjects\ProteusPokemon\Util\PixelLCDConvert.cpp
 <<
@@ -252,13 +176,9 @@ CMakeFiles\ProteusPokemon.dir\Util\PixelLCDConvert.cpp.s: cmake_force
 ProteusPokemon_OBJECTS = \
 "CMakeFiles\ProteusPokemon.dir\main.cpp.obj" \
 "CMakeFiles\ProteusPokemon.dir\World\Tile.cpp.obj" \
-"CMakeFiles\ProteusPokemon.dir\World\Texture.cpp.obj" \
 "CMakeFiles\ProteusPokemon.dir\Player\Player.cpp.obj" \
-"CMakeFiles\ProteusPokemon.dir\Player\Item.cpp.obj" \
-"CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.obj" \
 "CMakeFiles\ProteusPokemon.dir\Music\Music.cpp.obj" \
 "CMakeFiles\ProteusPokemon.dir\World\World.cpp.obj" \
-"CMakeFiles\ProteusPokemon.dir\Text.cpp.obj" \
 "CMakeFiles\ProteusPokemon.dir\Util\PixelLCDConvert.cpp.obj"
 
 # External object files for target ProteusPokemon
@@ -266,17 +186,13 @@ ProteusPokemon_EXTERNAL_OBJECTS =
 
 ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\main.cpp.obj
 ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\World\Tile.cpp.obj
-ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\World\Texture.cpp.obj
 ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\Player\Player.cpp.obj
-ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\Player\Item.cpp.obj
-ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\World\TileSet.cpp.obj
 ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\Music\Music.cpp.obj
 ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\World\World.cpp.obj
-ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\Text.cpp.obj
 ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\Util\PixelLCDConvert.cpp.obj
 ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\build.make
 ProteusPokemon.exe: CMakeFiles\ProteusPokemon.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ProteusPokemon.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ProteusPokemon.exe"
 	"C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\ProteusPokemon.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\Preview\VC\Tools\MSVC\1424~1.282\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\ProteusPokemon.dir\objects1.rsp @<<
  /out:ProteusPokemon.exe /implib:ProteusPokemon.lib /pdb:C:\Users\johnk\CLionProjects\ProteusPokemon\cmake-build-debug\ProteusPokemon.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

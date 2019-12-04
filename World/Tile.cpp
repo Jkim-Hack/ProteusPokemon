@@ -6,6 +6,7 @@
 #include "../Libraries/FEHLCD.h"
 #include <time.h>
 #include <cstdlib>
+#include "../main.cpp"
 
 Tile::Tile() {
     Texture texture;
@@ -110,22 +111,93 @@ void Tile::set_texture(Texture texture) {
     draw_tile();
 }
 
-void Tile::onPlayerEnter() {
-    srand(time(NULL));
+void Tile::onPlayerEnter(Player* player) {
+    //Random integer within a range of 0 to 100
     int upper = 100;
     int lower = 0;
-    int number = (rand() % (upper - lower + 1)) + lower;
+    int number = (Random.RandInt() % (upper - lower + 1)) + lower;
+
+    //If encounter a pokemon, show the options
     if(number < texture.encounterRate){
-        //Encounter
+        LCD.WriteLine("A new Pokemon has appeared!");
+        FEHIcon::Icon fight_button;
+        fight_button.SetProperties("BUTTON", 30, 40, 30, 30, RED, CYAN);
+        fight_button.ChangeLabelString("FIGHT");
+        fight_button.Draw();
+
+        FEHIcon::Icon catch_button;
+        catch_button.SetProperties("BUTTON", 70, 40, 30, 30, LAWNGREEN, CYAN);
+        catch_button.ChangeLabelString("CATCH");
+        catch_button.Draw();
+
+        FEHIcon::Icon run_button;
+        run_button.SetProperties("BUTTON", 110, 40, 30, 30, LIGHTBLUE, CYAN);
+        run_button.ChangeLabelString("RUN");
+        run_button.Draw();
+
+        float x, y;
+        while(true) {
+            LCD.Touch(&x, &y);
+            if(fight_button.Pressed(x,y,0)) {
+                //Check to see if loss
+                if(number > 95) {
+                    //Write to save txt file
+                    LCD.WriteLine("You lose! Restart the console...");
+                    your_losses++;
+                    FEHFile *fptr = SD.FOpen("s.txt","w");
+                    SD.FPrintf(fptr, "%i\n", pokemon_captured);
+                    SD.FPrintf(fptr, "%i\n", pokemon_defeated);
+                    SD.FPrintf(fptr, "%i\n", your_losses);
+                    //Close the file
+                    SD.FClose(fptr);
+                } else {
+                    //Write to save txt file
+                    LCD.WriteLine("You win!");
+                    FEHFile *fptr = SD.FOpen("s.txt","w");
+                    pokemon_defeated++;
+                    SD.FPrintf(fptr, "%i\n", pokemon_captured);
+                    SD.FPrintf(fptr, "%i\n", pokemon_defeated);
+                    SD.FPrintf(fptr, "%i\n", your_losses);
+                    //Close the file
+                    SD.FClose(fptr);
+                    LCD.WriteLine("Reloading map...");
+                    player->world = World();
+                    break;
+                }
+            } else if(catch_button.Pressed(x, y, 0)) {
+                //Write to save txt file
+                int random = (Random.RandInt() % (upper - lower + 1)) + lower;
+                if(random < 50){
+                    LCD.WriteLine("You caught a Pokemon!");
+                    FEHFile *fptr = SD.FOpen("s.txt","w");
+                    pokemon_captured++;
+                    SD.FPrintf(fptr, "%i\n", pokemon_captured);
+                    SD.FPrintf(fptr, "%i\n", pokemon_defeated);
+                    SD.FPrintf(fptr, "%i\n", your_losses);
+                    //Close the file
+                    SD.FClose(fptr);
+                    LCD.WriteLine("Reloading map...");
+                    player->world = World();
+                    break;
+                } else {
+                    LCD.WriteLine("The Pokemon broke free!");
+                }
+            } else if(run_button.Pressed(x, y, 0)) {
+                //Instantiate the world again
+                player->world = World();
+                break;
+            }
+        }
     }
 }
 
 void Tile::onPlayerExit() {
+    //Redraw tile
     draw_tile();
 }
 
 void Tile::init_tiles() {
-    unsigned int bar[256] = {
+    unsigned short int bar[256] = {
             0x03, 0x03, 0x03, 0x03, 0x03, 0x03, 0x00, 0x00, 0x00, 0x00, 0x00, 0x03, 0x03, 0x03, 0x03, 0x03,
             0x03, 0x03, 0x03, 0x03, 0x00, 0x00, 0x02, 0x01, 0x01, 0x01, 0x02, 0x00, 0x00, 0x03, 0x03, 0x03,
             0x03, 0x03, 0x03, 0x00, 0x02, 0x01, 0x03, 0x03, 0x03, 0x03, 0x03, 0x01, 0x02, 0x00, 0x03, 0x03,
@@ -143,7 +215,7 @@ void Tile::init_tiles() {
             0x03, 0x03, 0x01, 0x02, 0x02, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0x02, 0x03, 0x03, 0x03,
             0x03, 0x03, 0x03, 0x01, 0x01, 0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 0x03, 0x03, 0x03, 0x03, 0x03,
     };
-    unsigned int rock[256] = {
+    unsigned short int rock[256] = {
             0x01, 0x03, 0x01, 0x03, 0x01, 0x00, 0x00, 0x00, 0x00, 0x02, 0x03, 0x01, 0x03, 0x01, 0x03, 0x01,
             0x03, 0x01, 0x02, 0x02, 0x00, 0x01, 0x03, 0x03, 0x03, 0x00, 0x00, 0x02, 0x01, 0x03, 0x01, 0x03,
             0x01, 0x03, 0x01, 0x00, 0x01, 0x03, 0x03, 0x03, 0x01, 0x03, 0x00, 0x00, 0x01, 0x02, 0x01, 0x03,
@@ -161,7 +233,7 @@ void Tile::init_tiles() {
             0x01, 0x02, 0x01, 0x02, 0x02, 0x00, 0x02, 0x01, 0x01, 0x02, 0x00, 0x02, 0x01, 0x02, 0x03, 0x01,
             0x03, 0x01, 0x03, 0x01, 0x01, 0x02, 0x00, 0x00, 0x00, 0x00, 0x02, 0x01, 0x01, 0x03, 0x01, 0x01,
     };
-    unsigned int stairs[256] = {
+    unsigned short int stairs[256] = {
             0x02, 0x01, 0x02, 0x01, 0x02, 0x01, 0x02, 0x02, 0x02, 0x01, 0x02, 0x01, 0x02, 0x01, 0x02, 0x02,
             0x01, 0x02, 0x01, 0x01, 0x01, 0x02, 0x01, 0x02, 0x01, 0x02, 0x01, 0x01, 0x01, 0x02, 0x01, 0x02,
             0x02, 0x01, 0x01, 0x01, 0x02, 0x02, 0x02, 0x01, 0x02, 0x01, 0x01, 0x01, 0x02, 0x02, 0x02, 0x01,
@@ -179,7 +251,7 @@ void Tile::init_tiles() {
             0x02, 0x01, 0x01, 0x01, 0x02, 0x01, 0x02, 0x02, 0x02, 0x01, 0x01, 0x01, 0x02, 0x01, 0x02, 0x02,
             0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02, 0x02,
     };
-    unsigned int jumpable[256] = {
+    unsigned short int jumpable[256] = {
             0x03, 0x01, 0x03, 0x01, 0x03, 0x01, 0x01, 0x01, 0x03, 0x01, 0x03, 0x01, 0x03, 0x01, 0x01, 0x00,
             0x01, 0x03, 0x03, 0x03, 0x01, 0x03, 0x01, 0x03, 0x01, 0x03, 0x03, 0x03, 0x01, 0x03, 0x01, 0x00,
             0x03, 0x03, 0x03, 0x01, 0x01, 0x01, 0x03, 0x01, 0x03, 0x03, 0x03, 0x01, 0x01, 0x01, 0x03, 0x00,
@@ -197,7 +269,7 @@ void Tile::init_tiles() {
             0x02, 0x00, 0x00, 0x01, 0x02, 0x00, 0x00, 0x02, 0x02, 0x00, 0x00, 0x01, 0x02, 0x00, 0x00, 0x00,
             0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x01, 0x01, 0x00, 0x00,
     };
-    unsigned int green[256] = {
+    unsigned short int green[256] = {
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0x01, 0x02, 0x01, 0x02, 0x01, 0x02, 0x02,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x02, 0x01, 0x01, 0x01, 0x02, 0x01, 0x02,
             0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0x01, 0x01, 0x01, 0x02, 0x02, 0x02, 0x01,
@@ -215,7 +287,7 @@ void Tile::init_tiles() {
             0x01, 0x01, 0x02, 0x01, 0x01, 0x02, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
             0x01, 0x02, 0x02, 0x02, 0x02, 0x02, 0x01, 0x02, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     };
-    unsigned int gravel[256] = {
+    unsigned short int gravel[256] = {
             0x00, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00,
             0x01, 0x00, 0x01, 0x01, 0x01, 0x00, 0x01, 0x00, 0x01, 0x00, 0x01, 0x01, 0x01, 0x00, 0x01, 0x00,
             0x00, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x01, 0x01, 0x00, 0x00, 0x00, 0x01,
@@ -234,6 +306,7 @@ void Tile::init_tiles() {
             0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00,
     };
 
+    //Set references to the pointers in the class
     this->bar = &bar;
     this->rock = &rock;
     this->stairs = &stairs;
@@ -243,6 +316,7 @@ void Tile::init_tiles() {
 
 }
 
+//Draws the path tile
 void Tile::draw_two_path_rect(int originX, int originY) {
     LCD.SetFontColor(0xA8A8A8);
     LCD.DrawPixel(originX, originY);
@@ -251,6 +325,7 @@ void Tile::draw_two_path_rect(int originX, int originY) {
     LCD.DrawPixel(originX + 2, originY + 1);
 }
 
+//Draws a quarter of the tall grass
 void Tile::draw_tall_grass_quarter(int originX, int originY) {
     LCD.SetFontColor(0xA8A8A8);
     LCD.DrawPixel(originX, originY+2);
@@ -296,6 +371,7 @@ void Tile::draw_tall_grass_quarter(int originX, int originY) {
 
 }
 
+//Draws the bar tile
 void Tile::draw_bar(int originX, int originY) {
     //0 = 040204
     //1 = acaaac
@@ -336,6 +412,7 @@ void Tile::draw_bar(int originX, int originY) {
 
 }
 
+//Draws the rock tiles
 void Tile::draw_rock(int originX, int originY) {
     //0 = 14121c
     //1 = acaaac
@@ -376,6 +453,7 @@ void Tile::draw_rock(int originX, int originY) {
 
 }
 
+//Draw the stairs tile
 void Tile::draw_stairs(int originX, int originY) {
     //0 = 646264
     //1 = fcfafc
@@ -409,6 +487,8 @@ void Tile::draw_stairs(int originX, int originY) {
         }
     }
 }
+
+//Draws the jumpable tile
 void Tile::draw_jumpable(int originX, int originY) {
     //0 = 040204
     //1 = acaaac
@@ -448,6 +528,7 @@ void Tile::draw_jumpable(int originX, int originY) {
     }
 }
 
+//Draws the green tile
 void Tile::draw_green(int originX, int originY) {
     //0 = 54966c
     //1 = fcfafc
@@ -482,6 +563,7 @@ void Tile::draw_green(int originX, int originY) {
     }
 }
 
+//Draws the gravel tile
 void Tile::draw_gravel(int originX, int originY) {
     //0 = fcfafc
     //1 = acaaac

@@ -12,10 +12,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39d9f1f4-7cdb-4dc9-86b3-8730cde318a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Text.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Text.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Text.h" beforeDir="false" afterPath="$PROJECT_DIR$/Text.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/Item.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/Item.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Player/Player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Text.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Text.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util/PixelLCDConvert.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Util/PixelLCDConvert.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util/PixelLCDConvert.h" beforeDir="false" afterPath="$PROJECT_DIR$/Util/PixelLCDConvert.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util/copyright.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Util/copyright.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util/intro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Util/intro.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/Texture.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/Texture.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Texture.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/Tile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/Tile.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/Tile.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/TileSet.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/TileSet.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/World/World.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/World.h" beforeDir="false" afterPath="$PROJECT_DIR$/World/World.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/World/route1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/World/route1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProteusPokemon.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProteusPokemon.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProteusPokemon.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,7 +135,7 @@
       <workItem from="1575183336675" duration="137000" />
       <workItem from="1575223032895" duration="1128000" />
       <workItem from="1575225890518" duration="4574000" />
-      <workItem from="1575306635446" duration="15154000" />
+      <workItem from="1575306635446" duration="37377000" />
     </task>
     <task id="LOCAL-00001" summary="initial path tile created">
       <created>1574660001058</created>
@@ -146,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575349363289</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added fixes">
+      <created>1575402667603</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575402667603</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

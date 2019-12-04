@@ -5,6 +5,7 @@
 #ifndef PROTEUSPOKEMON_TEXTURE_H
 #define PROTEUSPOKEMON_TEXTURE_H
 
+//Texture enums
 enum TILETYPE {
     TALLGRASS,
     PATH,

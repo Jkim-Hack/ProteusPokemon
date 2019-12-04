@@ -5,13 +5,13 @@
 #ifndef PROTEUSPOKEMON_PLAYER_H
 #define PROTEUSPOKEMON_PLAYER_H
 
-#include "Item.h"
 #include "../World/Texture.h"
 #include "../World/World.h"
 
 class Player {
 
 public:
+    //Instantiate tile positions, textures and world
     int tile_pos_r, tile_pos_c;
     int originX, originY;
     Texture playerTexture;
@@ -20,20 +20,20 @@ public:
     Player();
     Player(int, int);
 
-    void move_right();
-    void move_left();
-    void move_up();
-    void move_down();
-    void draw_player(int);
+    void move_right(); //Moves player right
+    void move_left(); //Moves player left
+    void move_up(); //Moves player up
+    void move_down(); //Moves player down
+    void draw_player(int); //Draw the player
 
 private:
-    void reverse_pixels(int(*)[256]);
-    int sprite0[256];
-    int sprite1[256];
-    int sprite2[256];
-    int sprite3[256];
-    int sprite4[256];
-    int sprite5[256];
+    void reverse_pixels(short int(*)[256]); //Reverses the pixels
+    short int sprite0[256];
+    short int sprite1[256];
+    short int sprite2[256];
+    short int sprite3[256];
+    short int sprite4[256];
+    short int sprite5[256];
 };
 
 

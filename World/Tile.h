@@ -8,33 +8,39 @@
 
 #include "Texture.h"
 #include "../Player/Player.h"
+#include "../World/World.h"
 
 class Tile {
 public:
+    //Instantiate the objects
     Tile();
     Tile(int, int, Texture);
     Tile(int, int, int, int, Texture);
+
+    //The size and origin
     int sizeX, sizeY;
     int originX, originY;
 
+    //Can the left, right, down, and up
     bool can_left, can_right, can_down, can_up;
 
-    void set_origin(int, int);
-    void draw_tile();
-    void set_texture(Texture);
-    void onPlayerEnter();
-    void onPlayerExit();
+    void set_origin(int, int); //Set the origin
+    void draw_tile(); //Draws the tile
+    void set_texture(Texture); //Sets the texture
+    void onPlayerEnter(Player*); //On player enter
+    void onPlayerExit(); //On player exit
 private:
 
-    unsigned int (*bar)[256];
-    unsigned int (*rock)[256];
-    unsigned int (*stairs)[256];
-    unsigned int (*jumpable)[256];
-    unsigned int (*green)[256];
-    unsigned int (*gravel)[256];
+    unsigned short int (*bar)[256];
+    unsigned short int (*rock)[256];
+    unsigned short int (*stairs)[256];
+    unsigned short int (*jumpable)[256];
+    unsigned short int (*green)[256];
+    unsigned short int (*gravel)[256];
 
-    void init_tiles();
+    void init_tiles(); //Initialize all tiles
 
+    //Draws all textures
     Texture texture;
     void draw_two_path_rect(int, int);
     void draw_tall_grass_quarter(int,int);

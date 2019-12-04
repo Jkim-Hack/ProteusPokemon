@@ -9,49 +9,19 @@
 #include "../Libraries/FEHSD.h"
 #include "../Libraries/FEHLCD.h"
 
-PixelLCDConvert::PixelLCDConvert(int sizeX, int sizeY) {
+PixelLCDConvert::PixelLCDConvert(int sizeX) {
     this->sizeX = sizeX;
-    this->sizeY = sizeY;
-    for (int i = 0; i < this->sizeY; ++i) {
-        map[i] = (int*)std::malloc(this->sizeX* sizeof(int));
-    }
 }
 
 void PixelLCDConvert::pixelarr_to_lcd(char filename[], SCREENTYPE type) {
-    addToMap(filename);
+    //If the type is copyright then the copyright will show, if intro, intro will show
     switch (type) {
         case COPYRIGHT:
             //0 = 040204
             //1 = dca294
             //2 = fcfefc
             //3 = acaaac
-            for (int r = 0; r < this->sizeY; ++r) {
-                for (int c = 0; c < this->sizeX; ++c) {
-                    int elem = map[r][c];
-                    switch (elem){
-                        case 0:
-                            LCD.SetFontColor(0x040204);
-                            LCD.DrawPixel(c, r);
-                            break;
-                        case 1:
-                            LCD.SetFontColor(0xDCA294);
-                            LCD.DrawPixel(c,r);
-                            break;
-                        case 2:
-                            LCD.SetFontColor(0xFCFEFC);
-                            LCD.DrawPixel(c,r);
-                            break;
-                        case 3:
-                            LCD.SetFontColor(0xACAAAC);
-                            LCD.DrawPixel(c,r);
-                            break;
-                        default:
-                            LCD.SetFontColor(BLACK);
-                            LCD.DrawPixel(c, r);
-                            break;
-                    }
-                }
-            }
+            addToMapCopyright(filename);
             break;
         case INTRO:
             //0 = 040204
@@ -60,63 +30,91 @@ void PixelLCDConvert::pixelarr_to_lcd(char filename[], SCREENTYPE type) {
             //3 = fcfefc
             //4 = c4b2e4
             //5 = 646264
-            for (int r = 0; r < this->sizeY; ++r) {
-                for (int c = 0; c < this->sizeX; ++c) {
-                    int elem = map[r][c];
-                    switch (elem){
-                        case 0:
-                            LCD.SetFontColor(0x040204);
-                            LCD.DrawPixel(c, r);
-                            break;
-                        case 1:
-                            LCD.SetFontColor(0xACAAAC);
-                            LCD.DrawPixel(c,r);
-                            break;
-                        case 2:
-                            LCD.SetFontColor(0x2402AC);
-                            LCD.DrawPixel(c,r);
-                            break;
-                        case 3:
-                            LCD.SetFontColor(0xFCFEFC);
-                            LCD.DrawPixel(c,r);
-                            break;
-                        case 4:
-                            LCD.SetFontColor(0xC4B2E4);
-                            LCD.DrawPixel(c,r);
-                            break;
-                        case 5:
-                            LCD.SetFontColor(0x646264);
-                            LCD.DrawPixel(c,r);
-                            break;
-                        default:
-                            LCD.SetFontColor(BLACK);
-                            LCD.DrawPixel(c,r);
-                            break;
-                    }
-                }
-            }
+            addToMapIntro(filename);
             break;
     }
 }
 
-void PixelLCDConvert::addToMap(char filename[]) {
+void PixelLCDConvert::addToMapIntro(char filename[]) {
 
-    char line[this->sizeX + 1];
-    int count = 0;
+    //Get the line
+    char line[this->sizeX * 2 + 1];
+    int count = 0; //Get the row count
+    int j = 0; //Get the x column count
     while(SD.fscanf(filename, count, "%s", line) != EOF) {
-        getDelims(line, count);
+        for (int i = 0; i < sizeX*2 + 1; ++i) {
+            if(i % 2 == 0){
+                int elem = line[i]; //Get the pixel number
+                //Display based on number
+                switch (elem){
+                    case 0:
+                        LCD.SetFontColor(0x040204);
+                        LCD.DrawPixel(j, count);
+                        break;
+                    case 1:
+                        LCD.SetFontColor(0xACAAAC);
+                        LCD.DrawPixel(j,count);
+                        break;
+                    case 2:
+                        LCD.SetFontColor(0x2402AC);
+                        LCD.DrawPixel(j,count);
+                        break;
+                    case 3:
+                        LCD.SetFontColor(0xFCFEFC);
+                        LCD.DrawPixel(j,count);
+                        break;
+                    case 4:
+                        LCD.SetFontColor(0xC4B2E4);
+                        LCD.DrawPixel(j,count);
+                        break;
+                    case 5:
+                        LCD.SetFontColor(0x646264);
+                        LCD.DrawPixel(j,count);
+                        break;
+                    default:
+                        break;
+                }
+                j++;
+            }
+        }
         count++;
     }
 }
 
-void PixelLCDConvert::getDelims(char* line, int linenum) {
-    char * pch;
-    pch = std::strtok (line,", ");
-    int i = 0;
-    while (pch != NULL && i < sizeX)
-    {
-        map[linenum][i] = (int)std::strtol(pch, NULL, 0);
-        pch = std::strtok (NULL, ", ");
-        ++i;
+void PixelLCDConvert::addToMapCopyright(char filename[]) {
+
+    //Get the line
+    char line[this->sizeX * 2 + 1];
+    int count = 0; //Row count y
+    int j = 0; //Column count x
+    while(SD.fscanf(filename, count, "%s", line) != EOF) {
+        for (int i = 0; i < sizeX*2 + 1; ++i) {
+            if(i % 2 == 0){
+                int elem = line[i]; //Get the pixel int
+                //Display based on number
+                switch (elem){
+                    case 0:
+                        LCD.SetFontColor(0x040204);
+                        LCD.DrawPixel(j, count);
+                        break;
+                    case 1:
+                        LCD.SetFontColor(0xDCA294);
+                        LCD.DrawPixel(j,count);
+                        break;
+                    case 2:
+                        LCD.SetFontColor(0xFCFEFC);
+                        LCD.DrawPixel(j,count);
+                        break;
+                    case 3:
+                        LCD.SetFontColor(0xACAAAC);
+                        LCD.DrawPixel(j,count);
+                        break;
+                    default:
+                        break;
+                }
+                j++;
+            }
+        }
+        count++;
     }
 }

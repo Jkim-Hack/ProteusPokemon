@@ -11,12 +11,7 @@
 class World {
 public:
     Tile* map[18][36];
-    World();
-
-    bool move_right(int, int);
-    bool move_left(int, int);
-    bool move_up(int, int);
-    bool move_down(int, int);
+    World(); //Instantiate the tile set map and world
 };
 
 

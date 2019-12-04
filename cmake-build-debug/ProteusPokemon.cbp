@@ -90,31 +90,16 @@
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Music/Music.cpp">
 			<Option target="ProteusPokemon"/>
 		</Unit>
-		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Player/Item.cpp">
-			<Option target="ProteusPokemon"/>
-		</Unit>
-		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Player/Item.h">
-			<Option target="ProteusPokemon"/>
-		</Unit>
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Player/Player.cpp">
 			<Option target="ProteusPokemon"/>
 		</Unit>
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Player/Player.h">
 			<Option target="ProteusPokemon"/>
 		</Unit>
-		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Text.cpp">
-			<Option target="ProteusPokemon"/>
-		</Unit>
-		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Text.h">
-			<Option target="ProteusPokemon"/>
-		</Unit>
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Util/PixelLCDConvert.cpp">
 			<Option target="ProteusPokemon"/>
 		</Unit>
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/Util/PixelLCDConvert.h">
-			<Option target="ProteusPokemon"/>
-		</Unit>
-		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/World/Texture.cpp">
 			<Option target="ProteusPokemon"/>
 		</Unit>
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/World/Texture.h">
@@ -124,12 +109,6 @@
 			<Option target="ProteusPokemon"/>
 		</Unit>
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/World/Tile.h">
-			<Option target="ProteusPokemon"/>
-		</Unit>
-		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/World/TileSet.cpp">
-			<Option target="ProteusPokemon"/>
-		</Unit>
-		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/World/TileSet.h">
 			<Option target="ProteusPokemon"/>
 		</Unit>
 		<Unit filename="C:/Users/johnk/CLionProjects/ProteusPokemon/World/World.cpp">
